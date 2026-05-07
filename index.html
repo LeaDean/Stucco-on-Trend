@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stucco on Trend — Venetian Plastering Specialists</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-main">Stucco</span>
+        <span class="logo-sub">on Trend</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#craft">Craft</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact" class="nav-cta">Enquire</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#craft" class="mobile-link">Craft</a></li>
+      <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+      <li><a href="#process" class="mobile-link">Process</a></li>
+      <li><a href="#contact" class="mobile-link">Enquire</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <!-- SVG texture overlay -->
+      <svg class="hero-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+        <filter id="noise">
+          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+          <feColorMatrix type="saturate" values="0"/>
+          <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
+        </filter>
+        <rect width="100%" height="100%" filter="url(#noise)" opacity="0.08"/>
+      </svg>
+      <!-- Venetian plaster placeholder image -->
+      <div class="hero-img-wrap">
+        <img src="images/1.webp" 
+             alt="Venetian plaster wall — warm ivory tones" 
+             class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Master Plasterers · Est. 2008</p>
+      <h1 class="hero-title reveal">
+        <em>The Art of</em><br>
+        Venetian Plaster
+      </h1>
+      <p class="hero-tagline reveal">Walls that breathe, shimmer, and endure.</p>
+      <a href="#gallery" class="btn-gold reveal">View Our Work</a>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- CRAFT INTRO -->
+  <section id="craft" class="section-craft">
+    <div class="container-split">
+      <div class="split-text reveal-left">
+        <p class="label-gold">About the Craft</p>
+        <h2>Centuries of Technique,<br><em>Applied Today</em></h2>
+        <p class="body-copy">
+          Venetian plaster — <em>marmorino</em> and <em>stucco lustro</em> — is one of the most demanding 
+          wall finishes in existence. Each layer is hand-burnished to build depth, translucency, and 
+          that unmistakable living sheen that no paint can replicate.
+        </p>
+        <p class="body-copy">
+          At Stucco on Trend, every project is personally overseen by our master plasterers. 
+          We work exclusively with lime-based pigments, natural marbles, and traditional Venetian 
+          methods refined over fifteen years of bespoke residential and commercial work.
+        </p>
+        <div class="craft-stats">
+          <div class="stat">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">300+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Bespoke Finishes</span>
+          </div>
+        </div>
+      </div>
+      <div class="split-image reveal-right">
+        <div class="img-frame">
+          <img src="images/2.jpeg" 
+               alt="Venetian plaster close-up texture" />
+          <div class="img-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section-gallery">
+    <div class="gallery-header reveal">
+      <p class="label-gold">Portfolio</p>
+      <h2>Selected Works</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item large reveal" data-caption="Marmorino — Private Residence, Chelsea">
+        <img src="images/3.jpg" alt="Marmorino plaster, Chelsea residence" />
+        <div class="gallery-caption">
+          <span>Marmorino</span>
+          <p>Private Residence, Chelsea</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-caption="Stucco Lustro — Boutique Hotel, Edinburgh">
+        <img src="images/4.jpg" alt="Stucco lustro hotel interior" />
+        <div class="gallery-caption">
+          <span>Stucco Lustro</span>
+          <p>Boutique Hotel, Edinburgh</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-caption="Grassello — Period Property, Bath">
+        <img src="images/5.avif" alt="Grassello Venetian plaster Bath" />
+        <div class="gallery-caption">
+          <span>Grassello</span>
+          <p>Period Property, Bath</p>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal" data-caption="Polished Marble Plaster — London Penthouse">
+        <img src="images/6.webp" alt="Polished marble plaster penthouse" />
+        <div class="gallery-caption">
+          <span>Polished Marble Plaster</span>
+          <p>London Penthouse</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section-process">
+    <div class="process-inner">
+      <div class="process-header reveal">
+        <p class="label-gold">How We Work</p>
+        <h2>Our Process</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <div class="step-number">01</div>
+          <div class="step-body">
+            <h3>Consultation</h3>
+            <p>We visit your space, understand your vision, and discuss finishes, textures, and colour. Every project begins with listening.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number">02</div>
+          <div class="step-body">
+            <h3>Sample Boards</h3>
+            <p>Bespoke hand-applied sample boards are created so you can see and feel the finish in your own light before commitment.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number">03</div>
+          <div class="step-body">
+            <h3>Preparation</h3>
+            <p>Surfaces are meticulously prepared. No shortcuts — the longevity of Venetian plaster depends entirely on the foundation beneath.</p>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-number">04</div>
+          <div class="step-body">
+            <h3>Application & Burnish</h3>
+            <p>Multiple coats, hand-burnished between each. A process of days, not hours, that builds depth invisible in cheaper alternatives.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="section-quote">
+    <div class="quote-wrap reveal">
+      <svg class="quote-mark" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 40V24C0 10.745 8.333 3.09 25 1l2 4C16.667 7.09 12 12.09 12 20h12v20H0zm36 0V24C36 10.745 44.333 3.09 61 1l2 4C52.667 7.09 48 12.09 48 20h12v20H36z" fill="currentColor"/>
+      </svg>
+      <blockquote>
+        Our dining room was transformed beyond anything we imagined. 
+        The depth in that plaster — it changes with the light all day. 
+        We've had guests stand and stare at it.
+      </blockquote>
+      <cite>— Mr & Mrs Harrington, Kensington</cite>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-contact">
+    <div class="contact-inner">
+      <div class="contact-text reveal-left">
+        <p class="label-gold">Get in Touch</p>
+        <h2>Begin Your<br><em>Project</em></h2>
+        <p class="body-copy">We take on a limited number of projects each year to ensure the quality every client deserves. Reach out to discuss availability and arrange a complimentary consultation.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <a href="tel:+441234567890">+44 (0) 1234 567 890</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:hello@stuccoontrend.co.uk">hello@stuccoontrend.co.uk</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Area</span>
+            <span>London & Home Counties</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal-right">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="project">Project Type</label>
+            <select id="project" name="project">
+              <option value="">— Please select —</option>
+              <option>Residential Interior</option>
+              <option>Commercial / Hospitality</option>
+              <option>Period Property Restoration</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your space</label>
+            <textarea id="message" name="message" rows="4" placeholder="Location, room size, ideas..."></textarea>
+          </div>
+          <button type="submit" class="btn-gold full">Send Enquiry</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-main">Stucco</span>
+        <span class="logo-sub">on Trend</span>
+      </div>
+      <p class="footer-copy">Master plasterers specialising in authentic Venetian finishes.<br>London & Home Counties.</p>
+      <p class="footer-legal">© 2024 Stucco on Trend Ltd. All rights reserved.</p>
+    </div>
+    <div class="footer-line"></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
