@@ -43,20 +43,13 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-bg">
-      <!-- SVG texture overlay -->
-      <svg class="hero-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-        <filter id="noise">
-          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
-          <feColorMatrix type="saturate" values="0"/>
-          <feBlend in="SourceGraphic" mode="overlay" result="blend"/>
-        </filter>
-        <rect width="100%" height="100%" filter="url(#noise)" opacity="0.08"/>
-      </svg>
       <!-- Venetian plaster placeholder image -->
       <div class="hero-img-wrap">
         <img src="images/1.webp" 
              alt="Venetian plaster wall — warm ivory tones" 
-             class="hero-img" />
+             class="hero-img"
+             width="1920" height="1280"
+             fetchpriority="high" />
         <div class="hero-overlay"></div>
       </div>
     </div>
@@ -110,8 +103,10 @@
       </div>
       <div class="split-image reveal-right">
         <div class="img-frame">
-          <img src="images/2.jpeg" 
-               alt="Venetian plaster close-up texture" />
+          <img src="images/2.jpeg"
+               alt="Venetian plaster close-up texture"
+               width="800" height="1067"
+               loading="lazy" />
           <div class="img-accent"></div>
         </div>
       </div>
@@ -127,7 +122,7 @@
 
     <div class="gallery-grid">
       <div class="gallery-item large reveal" data-caption="Marmorino — Private Residence, Chelsea">
-        <img src="images/3.jpg" alt="Marmorino plaster, Chelsea residence" />
+        <img src="images/3.jpg" alt="Marmorino plaster, Chelsea residence" width="1200" height="750" loading="lazy" />
         <div class="gallery-caption">
           <span>Marmorino</span>
           <p>Private Residence, Chelsea</p>
@@ -135,7 +130,7 @@
       </div>
 
       <div class="gallery-item reveal" data-caption="Stucco Lustro — Boutique Hotel, Edinburgh">
-        <img src="images/4.jpg" alt="Stucco lustro hotel interior" />
+        <img src="images/4.jpg" alt="Stucco lustro hotel interior" width="800" height="1067" loading="lazy" />
         <div class="gallery-caption">
           <span>Stucco Lustro</span>
           <p>Boutique Hotel, Edinburgh</p>
@@ -143,7 +138,7 @@
       </div>
 
       <div class="gallery-item reveal" data-caption="Grassello — Period Property, Bath">
-        <img src="images/5.avif" alt="Grassello Venetian plaster Bath" />
+        <img src="images/5.avif" alt="Grassello Venetian plaster Bath" width="800" height="1067" loading="lazy" />
         <div class="gallery-caption">
           <span>Grassello</span>
           <p>Period Property, Bath</p>
@@ -151,7 +146,7 @@
       </div>
 
       <div class="gallery-item reveal" data-caption="Polished Marble Plaster — London Penthouse">
-        <img src="images/6.webp" alt="Polished marble plaster penthouse" />
+        <img src="images/6.webp" alt="Polished marble plaster penthouse" width="800" height="1067" loading="lazy" />
         <div class="gallery-caption">
           <span>Polished Marble Plaster</span>
           <p>London Penthouse</p>
@@ -213,7 +208,19 @@
         The depth in that plaster — it changes with the light all day. 
         We've had guests stand and stare at it.
       </blockquote>
-      <cite>— Mr & Mrs Harrington, Kensington</cite>
+      <cite>— Mr &amp; Mrs Harrington, Kensington</cite>
+
+      <blockquote>
+        Stucco on Trend restored our Georgian hallway with absolute fidelity.
+        Every brush of light across the marmorino is a reminder that we chose the right craftsmen.
+      </blockquote>
+      <cite>— Dr Elaine Whitfield, Hampstead</cite>
+
+      <blockquote>
+        We interviewed five firms. Only this team understood that Venetian plaster isn't a finish — it's a living surface.
+        The sheen in our restaurant is still commented on two years later.
+      </blockquote>
+      <cite>— Marco Verdi, Chelsea</cite>
     </div>
   </section>
 
@@ -243,11 +250,13 @@
         <form id="contactForm" novalidate>
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required />
+            <input type="text" id="name" name="name" placeholder="Your full name" required aria-describedby="nameError" />
+            <span id="nameError" class="field-error" role="alert"></span>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <input type="email" id="email" name="email" placeholder="your@email.com" required aria-describedby="emailError" />
+            <span id="emailError" class="field-error" role="alert"></span>
           </div>
           <div class="form-group">
             <label for="project">Project Type</label>
@@ -267,6 +276,16 @@
           <p class="form-note" id="formNote"></p>
         </form>
       </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="section-trust">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="trust-num">15+</span><span class="trust-label">Years Experience</span></div>
+      <div class="trust-item"><span class="trust-num">300+</span><span class="trust-label">Projects Completed</span></div>
+      <div class="trust-item"><span class="trust-num">100%</span><span class="trust-label">Bespoke Finishes</span></div>
+      <div class="trust-item"><span class="trust-num">Fully</span><span class="trust-label">Insured</span></div>
     </div>
   </section>
 
